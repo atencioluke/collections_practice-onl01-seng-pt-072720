@@ -36,3 +36,7 @@ end
 def sum_array(array)
   array.inject(:+)
 end
+
+def add_s(array)
+  array.each_with_index.map { |element, index| index != 2 ? element << "s" : element }
+end
